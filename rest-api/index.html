@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Welcome to your first server! Hooray!</h1>
+    <button type="button" id="remove">Remove all data!</button>
+    <button id="pull">Pull data!</button>
+
+    <form method="POST" action="/api/post">
+      <input type="text" name="name" />
+      <input type="text" name="age" />
+      <button id="send" type="submit">Send data!</button>
+    </form>
+
+    <p id="container"></p>
+    <script src="./index.js"></script>
+  </body>
+</html>
