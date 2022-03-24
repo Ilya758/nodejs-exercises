@@ -1,20 +1,23 @@
 {
   "name": "nodejs",
-  "type": "commonjs",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js"
+    "start": "node weather-cli/weather.js",
+    "dev": "nodemon weather-cli/weather.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "chalk": "^5.0.1",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3"
+  },
   "devDependencies": {
     "nodemon": "^2.0.15"
-  },
-  "dependencies": {
-    "express": "^4.17.3"
   }
 }
